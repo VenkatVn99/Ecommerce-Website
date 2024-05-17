@@ -2112,7 +2112,8 @@ select {
 
 #registration {
   padding: 6vw 8vw 8vw 8vw;
-  background-image: linear-gradient(#9290c3, white);
+  /* background-image: linear-gradient(#9290c3, white); */
+  background-image: url("Images/login-page-banner 2.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -2120,6 +2121,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 60px;
 }
 #registration .form {
   background: white;
@@ -2136,6 +2138,27 @@ select {
   padding: 15px 10px;
   border: 1px solid #1b1a55;
   outline: none;
+}
+
+#registration .registration-header-info {
+  margin-right: 30px;
+}
+
+#registration .registration-header-info h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+
+#registration .registration-header-info p {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+#registration .form h3 {
+  font-weight: 600;
+  color: white;
 }
 
 #registration .btn {
@@ -2161,4 +2184,32 @@ select {
 #registration a.learnMore:hover {
   color: rgb(41 171 135);
   background: white;
+}
+
+@media (max-width: 769px) {
+  #registration {
+    margin-top: 8vw;
+    padding: 6vw 4vw 6vw 4vw;
+  }
+}
+@media (max-width: 475px) {
+  #registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  #registration .reminder {
+    margin-left: 0px;
+  }
+
+  #registration .form {
+    width: 80%;
+  }
+
+  #registration .reminder .time .date {
+    font-size: 0.8rem;
+  }
 }
