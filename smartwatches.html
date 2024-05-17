@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome to Gig Gadgets</title>
+    <meta name="author" content="Gig Gadgets" />
+    <meta name="description" content="Gadgets available for best Prices" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <div class="brand-logo">
+                    <img src="Images/location-shop-online-svgrepo-com.svg">
+                    <h3><a class="navbar-brand" href="#">Gig Gadgets</a></h3>
+                </div>
+
+
+                <!--Toggle Button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Side bar-->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <!--Side bar header-->
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gig Gadgets</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--Sidebar Body-->
+                    <div class="offcanvas-body p-lg-0">
+                        <ul class="navbar-nav justify-content-end align-items-start flex-grow-1 pe-3">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link active" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                        <div
+                            class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 custom-align-left-sm-md ">
+                            <a href="#" id="searchPlaceholder" class="mx-4 placeholder-custom"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="#" id="cartPlaceholder" class="mx-4  placeholder-custom"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#" id="userPlaceholder" class="mx-4  placeholder-custom"><i
+                                    class="fa-solid fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--PRODUCTS SECTION-->
+    <section id="prod">
+        <button id="toggleFilterBtn">Filters</button>
+        <div class="products-section">
+            <div class="filter-section">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <div class="filter-card">
+                        <h3>Categories</h3>
+                        <select onchange="window.location.href = this.value;">
+                            <option value="smartwatches.html">Smartwatches</option>
+                            <option value="mobiles.html">Mobiles</option>
+                            <option value="tablets.html">Tablets</option>
+                            <option value="laptops.html">Laptops</option>
+                            <option value="headphones.html">Headphones</option>
+                            <option value="speakers.html">Speakers</option>
+                        </select>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Brand</h3>
+                        <input type="checkbox" id="apple" name="apple">
+                        <label for="apple">Apple</label>
+                        <br>
+                        <input type="checkbox" id="samsung" name="samsung">
+                        <label for="samsung">Samsung</label>
+                        <br>
+                        <input type="checkbox" id="asus" name="asus">
+                        <label for="vivo">Fastrack</label>
+                        <br>
+                        <input type="checkbox" id="hp" name="hp">
+                        <label for="realme">Firebolt</label>
+                        <br>
+                        <input type="checkbox" id="lenovo" name="lenovo">
+                        <label for="oppo">Noise</label>
+                        <br>
+                        <input type="checkbox" id="lenovo" name="lenovo">
+                        <label for="oppo">Google</label>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Sort By</h3>
+                        <input type="radio" id="low-to-high" name="low-to-high" />
+                        <label for="low-to-high">Price -- Low to High</label>
+                        <br>
+                        <input type="radio" id="high-to-low" name="high-to-low" />
+                        <label for="high-to-low">Price -- High to Low</label>
+                        <br>
+                        <input type="radio" id="popularity" name="popularity" />
+                        <label for="popularity">Popularity</label>
+                        <br>
+                        <input type="radio" id="relevance" name="relevance" />
+                        <label for="relevance">Relevance</label>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Rating</h3>
+                        <input type="range" id="rating" name="rating" min="1" max="5" step="1">
+                        <output for="rating">3</output>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Display Size</h3>
+                        <input type="checkbox" id="i9" name="i9" />
+                        <label for="i9">30mm to 33mm</label>
+                        <br>
+                        <input type="checkbox" id="i7" name="i7" />
+                        <label for="i7">33mm to 35mm</label>
+                        <br>
+                        <input type="checkbox" id="i5" name="i5" />
+                        <label for="i5">35mm to 38mm</label>
+                        <br>
+                        <input type="checkbox" id="ryzen5000" name="ryzen5000" />
+                        <label for="ryezen5000">38mm to 40mm</label>
+                        <br>
+                        <input type="checkbox" id="ryzen7000" name="rygen7000" />
+                        <label for="ryzen7000">40mm to 44mm</label>
+                        <br>
+                        <input type="checkbox" id="M3" name="M3" />
+                        <label for="M3">44mm to 45mm</label>
+                        <br>
+                        <input type="checkbox" id="M3Pro" name="M3Pro" />
+                        <label for="M3Pro">Above 45mm</label>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Dail Shape</h3>
+                        <input type="checkbox" id="ram-8gb" name="ram-8gb" />
+                        <label for="ram-8gb">Curved</label>
+                        <br>
+                        <input type="checkbox" id="ram-16gb" name="ram-16gb" />
+                        <label for="ram-16gb">Oval</label>
+                        <br>
+                        <input type="checkbox" id="ram-32gb" name="ram-32gb" />
+                        <label for="ram-32gb">Rectangle</label>
+                        <br>
+                        <input type="checkbox" id="ram-32gb" name="ram-32gb" />
+                        <label for="ram-32gb">Square</label>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Compatible OS</h3>
+                        <input type="checkbox" id="rom-256gb" name="rom-256gb" />
+                        <label for="rom-256gb">Android</label>
+                        <br>
+                        <input type="checkbox" id="rom-16gb" name="rom-512gb" />
+                        <label for="rom-512gb">iOS</label>
+                        <br>
+                        <input type="checkbox" id="rom-1tb" name="rom-1tb" />
+                        <label for="rom-1tb">Proproetary OS</label>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Strap Colour</h3>
+                        <input type="checkbox" id="gpu-4gb" name="gpu-4gb" />
+                        <label for="gpu-4gb">White</label>
+                        <br>
+                        <input type="checkbox" id="gpu-8gb" name="gpu-8gb" />
+                        <label for="gpu-8gb">Black</label>
+                        <br>
+                        <input type="checkbox" id="gpu-3" name="gpu-16gb" />
+                        <label for="gpu-16gb">Multicolurs</label>
+                    </div>
+                    <div class="filter-card">
+                        <h3>Strap Material</h3>
+                        <input type="checkbox" id="gpu-3050" name="gpu-3050" />
+                        <label for="gpu-3050">Aluminium</label>
+                        <br>
+                        <input type="checkbox" id="gpu-4050" name="gpu-4050" />
+                        <label for="gpu-4050">Fabric</label>
+                        <br>
+                        <input type="checkbox" id="gpu-4060" name="gpu-4060" />
+                        <label for="gpu-16gb">Silicone</label>
+                        <br>
+                        <input type="checkbox" id="gpu-4060" name="gpu-4060" />
+                        <label for="gpu-16gb">Stainless Steel</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="watches-section">
+                <h3>Smart Watches</h3>
+                <div class="watches-section-row">
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7392.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7393.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7394.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7395.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7397.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7399.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7400.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7391.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7401.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7402.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7404.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="watches-section-card">
+                        <img src="smartwatchesImages/IMG_7405.jpg">
+                        <div class="watches-section-card-details">
+                            <p>Apple Iphone 15 128GB</p>
+                            <p>&#8377; 49,000</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Page Navigation-->
+    <div class="pagination">
+        <a href="#" class="prev">&laquo; Previous</a>
+        <a href="#" class="page">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="next">Next &raquo;</a>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-col">
+            <h3>Explore Gig Gadgets</h3>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Gig Gadgets Stories</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Group Companies</h3>
+            <li>Gigzters</li>
+            <li>Gig Wholesale</li>
+            <li>Gig trips</li>
+            <li>Gigsy</li>
+        </div>
+        <div class="footer-col">
+            <h3>Help</h3>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellations & Returns</li>
+            <li>FAQt</li>
+        </div>
+        <div class="footer-col">
+            <h3>Support</h3>
+            <li>Chat 24/7*</li>
+            <li>Track Order</li>
+            <li>Mail us</li>
+            <li>Technical Support</li>
+        </div>
+        <div class="footer-col">
+            <h3>Download Our App</h3>
+            <li><img src="Images/play-store.png" height="50"></li>
+            <li><img src="Images/app-store.png" height="40"></li>
+        </div>
+
+        <div class="footer-col">
+            <h3>News Letter</h3>
+            <p>Susbcribe to get Promo Offers</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a href="#" class="subscribe-btn">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Gig Gadgets Private Limited © All Rights Reserved.</p>
+            <div class="social-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const offcanvasNavbar = document.getElementById('offcanvasNavbar');
+            const flexContainer = document.getElementById('flexContainer');
+            const cartPlaceholder = document.getElementById('cartPlaceholder');
+            const searchPlaceholder = document.getElementById('searchPlaceholder');
+            const userPlaceholder = document.getElementById('userPlaceholder');
+
+            offcanvasNavbar.addEventListener('shown.bs.offcanvas', function () {
+                // Sidebar is opened
+                cartPlaceholder.innerHTML = 'Cart';
+                searchPlaceholder.innerHTML = 'Search';
+                userPlaceholder.innerHTML = 'User';
+            });
+
+            offcanvasNavbar.addEventListener('hidden.bs.offcanvas', function () {
+                // Sidebar is closed
+                cartPlaceholder.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
+                searchPlaceholder.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
+                userPlaceholder.innerHTML = '<i class="fa-solid fa-user"></i>';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleFilterBtn = document.getElementById('toggleFilterBtn');
+            const closeFilterBtn = document.getElementById('closeFilterBtn'); // Get reference to the close button
+            const filterSection = document.querySelector('.filter-section');
+
+            toggleFilterBtn.addEventListener('click', function () {
+                filterSection.classList.toggle('hidden');
+            });
+
+            // Add event listener to the close button
+            closeFilterBtn.addEventListener('click', function () {
+                filterSection.classList.add('hidden'); // Hide the filter section
+            });
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>
