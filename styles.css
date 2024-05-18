@@ -1950,6 +1950,14 @@ select {
   margin-top: 60px;
 }
 
+#contact-banner img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  position: relative;
+  top: 59px;
+}
+
 #contact .getin-box {
   width: 350px;
 }
@@ -2211,5 +2219,181 @@ select {
 
   #registration .reminder .time .date {
     font-size: 0.8rem;
+  }
+}
+
+/* CART  */
+/* #cart {
+  padding: 8vw 6vw;
+  margin-top: 60px;
+} */
+
+#cart {
+  padding: 6vw 6vw;
+}
+.cart-page {
+  margin: 80px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background: #1b1a55;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px 5px;
+  font-weight: 600;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #ff523b;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+td img {
+  height: 90px;
+  margin-right: 30px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #1b1a55;
+  width: 100%;
+  max-width: 484px;
+}
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+
+@media (max-width: 475px) {
+  .cart-info p {
+    font-size: 14px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+  }
+  td {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  th {
+    font-size: 15px;
+  }
+}
+
+/* USER ACCOUNT */
+
+#user-account {
+  padding: 8vw 4vw;
+}
+.user-account-container {
+  display: flex;
+  align-items: center;
+}
+.user-account-recent-col {
+  background-color: white;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 100px;
+  padding: 3vw 4vw;
+}
+.user-account-col {
+  text-align: left;
+}
+.user-account-col li {
+  list-style-type: none;
+  padding: 18px 0px;
+  font-weight: 600;
+}
+
+.user-account-col h3 {
+  font-weight: 600;
+}
+
+.user-account-col p {
+  font-weight: 600;
+}
+
+.recent-order-info h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.arrive-date {
+  margin-top: 30px;
+}
+.arrive-date h3 {
+  color: #39b329;
+  font-size: 32px;
+}
+.arrive-date a {
+  padding: 10px;
+  background-color: #1b1a55;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.arrive-date span {
+  color: blue;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.ordered-item {
+  margin-top: 60px;
+}
+.ordered-item img {
+  width: 10%;
+}
+.ordered-item p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 475px) {
+  .user-account-container {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-top: 60px;
+    justify-content: center;
+  }
+  .user-account-recent-col {
+    background-color: white;
+    width: 350px;
+    max-width: 900px;
+    margin: 0px;
+    padding: 3vw 4vw;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+  .user-account-col ul {
+    padding-left: 0px;
   }
 }

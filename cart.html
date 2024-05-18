@@ -59,10 +59,10 @@
                                 <a class="nav-link " href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item mx-4">
-                                <a class="nav-link" href="contact.html">Contact us</a>
+                                <a class="nav-link active" href="contact.html">Contact us</a>
                             </li>
                             <li class="nav-item mx-4">
-                                <a class="nav-link active" href="login.html">Sign In</a>
+                                <a class="nav-link" href="login.html">Sign In</a>
                             </li>
                         </ul>
                         <div
@@ -81,22 +81,138 @@
         </nav>
     </header>
 
-    <section id="registration">
-        <div class="registration-header-info">
-            <h1>GIG GADGETS</h1>
-            <p>Join 70,00,000+ shoppers on Gig Gadgets</p>
-            <h1>Register Today to unlock best offers</h1>
-        </div>
-        <div class="form">
-            <h3>Sign Up Now</h3>
-            <input type="text" placeholder="Name" name="" id="'">
-            <input type="text" placeholder="Email Address" name="" id="'">
-            <input type="text" placeholder="Phone Number" name="" id="'">
-            <div class="btn">
-                <a class="submit-btn" href="#">Sign In</a>
+    <!--CART-->
+    <section id="cart">
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="Images/IMG_7351 2.jpg">
+                            <div>
+                                <p>Apple Iphone Pro 256GB</p>
+                                <small>Price: &#8377; 1,39,000</small>
+                                <br />
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377; 1,39,000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="Images/IMG_7350 2.jpg">
+                            <div>
+                                <p>Google Pixel 8A 128GB</p>
+                                <small>Price: &#8377; 52,000</small>
+                                <br />
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377; 52,000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="headphonesImages/IMG_7408.jpg">
+                            <div>
+                                <p>Bose Headphones</p>
+                                <small>Price: &#8377; 39,000</small>
+                                <br />
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377; 39,000</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>&#8377;2,30,000</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>&#8377;264</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>&#8377;2,30,264</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-col">
+            <h3>Explore Gig Gadgets</h3>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Gig Gadgets Stories</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Group Companies</h3>
+            <li>Gigzters</li>
+            <li>Gig Wholesale</li>
+            <li>Gig trips</li>
+            <li>Gigsy</li>
+        </div>
+        <div class="footer-col">
+            <h3>Help</h3>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellations & Returns</li>
+            <li>FAQt</li>
+        </div>
+        <div class="footer-col">
+            <h3>Support</h3>
+            <li>Chat 24/7*</li>
+            <li>Track Order</li>
+            <li>Mail us</li>
+            <li>Technical Support</li>
+        </div>
+        <div class="footer-col">
+            <h3>Download Our App</h3>
+            <li><img src="Images/play-store.png" height="50"></li>
+            <li><img src="Images/app-store.png" height="40"></li>
+        </div>
+
+        <div class="footer-col">
+            <h3>News Letter</h3>
+            <p>Susbcribe to get Promo Offers</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a href="#" class="subscribe-btn">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Gig Gadgets Private Limited © All Rights Reserved.</p>
+            <div class="social-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const offcanvasNavbar = document.getElementById('offcanvasNavbar');

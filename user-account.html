@@ -59,10 +59,10 @@
                                 <a class="nav-link " href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item mx-4">
-                                <a class="nav-link" href="contact.html">Contact us</a>
+                                <a class="nav-link " href="contact.html">Contact us</a>
                             </li>
                             <li class="nav-item mx-4">
-                                <a class="nav-link active" href="login.html">Sign In</a>
+                                <a class="nav-link" href="login.html">Sign In</a>
                             </li>
                         </ul>
                         <div
@@ -72,7 +72,7 @@
                             <a href="cart.html" id="cartPlaceholder" class="mx-4  placeholder-custom"><i
                                     class="fa-solid fa-cart-shopping"></i></a>
                             <a href="user-account.html" id="userPlaceholder" class="mx-4  placeholder-custom"><i
-                                    class="fa-solid fa-user"></i></a>
+                                    class="fa-solid fa-user active"></i></a>
                         </div>
                     </div>
                 </div>
@@ -81,22 +81,101 @@
         </nav>
     </header>
 
-    <section id="registration">
-        <div class="registration-header-info">
-            <h1>GIG GADGETS</h1>
-            <p>Join 70,00,000+ shoppers on Gig Gadgets</p>
-            <h1>Register Today to unlock best offers</h1>
+    <section id="user-account">
+        <div class="user-account-container">
+            <div class="user-account-col">
+                <h3>My account</h3>
+                <p>Manage Account</p>
+                <ul>
+                    <li>Recent Orders</li>
+                    <li>Manage Profile</li>
+                    <li>Shipping Addresses</li>
+                    <li>Credit Cards</li>
+                    <li>Gift Cards</li>
+                    <li>Communication</li>
+                    <li>Preferences</li>
+                </ul>
+            </div>
+
+            <div class="user-account-recent-col">
+                <div class="recent-order-info">
+                    <h3>Recent Orders</h3>
+                    <p>Oct 9, 2024</p>
+                    <div class="arrive-date">
+                        <p>Order #553242 <span>See Details</span></p>
+                        <h3>Arrives by Oct 15</h3>
+                        <h3>Thu, Oct 15</h3>
+                        <a href="#">Track Items</a>
+                    </div>
+                    <div class="ordered-item">
+                        <img src="Images/IMG_7351 2.jpg" width="50w">
+                        <p>Apple Iphone 15 Pro</p>
+                        <p>Sold By GigMarket</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="form">
-            <h3>Sign Up Now</h3>
-            <input type="text" placeholder="Name" name="" id="'">
-            <input type="text" placeholder="Email Address" name="" id="'">
-            <input type="text" placeholder="Phone Number" name="" id="'">
-            <div class="btn">
-                <a class="submit-btn" href="#">Sign In</a>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-col">
+            <h3>Explore Gig Gadgets</h3>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Gig Gadgets Stories</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Group Companies</h3>
+            <li>Gigzters</li>
+            <li>Gig Wholesale</li>
+            <li>Gig trips</li>
+            <li>Gigsy</li>
+        </div>
+        <div class="footer-col">
+            <h3>Help</h3>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellations & Returns</li>
+            <li>FAQt</li>
+        </div>
+        <div class="footer-col">
+            <h3>Support</h3>
+            <li>Chat 24/7*</li>
+            <li>Track Order</li>
+            <li>Mail us</li>
+            <li>Technical Support</li>
+        </div>
+        <div class="footer-col">
+            <h3>Download Our App</h3>
+            <li><img src="Images/play-store.png" height="50"></li>
+            <li><img src="Images/app-store.png" height="40"></li>
+        </div>
+
+        <div class="footer-col">
+            <h3>News Letter</h3>
+            <p>Susbcribe to get Promo Offers</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a href="#" class="subscribe-btn">SUBSCRIBE</a>
             </div>
         </div>
-    </section>
+
+        <div class="copyright">
+            <p>Gig Gadgets Private Limited © All Rights Reserved.</p>
+            <div class="social-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const offcanvasNavbar = document.getElementById('offcanvasNavbar');
